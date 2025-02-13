@@ -188,15 +188,12 @@ h1 {
 }
 
 .hello-kitty {
-    position: absolute;
-    top: -10%;
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    animation: fallKitty linear infinite;
-    user-select: none; /* Prevent image selection */
-    pointer-events: auto; /* Allow clicking/tapping */
-    cursor: pointer; /* Show a pointer cursor on hover */
-    transition: top 0.5s ease, left 0.5s ease; /* Smooth respawn animation */
+  position: absolute;
+  top: -10%;
+  width: 150px; /* Adjust the size as needed */
+  height: auto; /* Keep the aspect ratio */
+  animation: fallKitty linear infinite; /* Apply falling animation */
+  user-select: none; /* Prevent image selection */
 }
 
 /* Mobile Styles */
@@ -382,5 +379,8 @@ h1 {
   animation-duration: 9s;
   animation-delay: 5s;
 }
-
-
+.hello-kitty {
+    pointer-events: auto; /* Allow clicking/tapping */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: top 0.5s ease, left 0.5s ease; /* Smooth respawn animation */
+}
