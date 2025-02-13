@@ -68,6 +68,16 @@ const questions = [
         type: "choice"
     },
     {
+        question: "One thing you dont like about me",
+        correctAnswers: ["*"],
+        type: "text"
+    },
+    {
+        question: "What one princess dress would you choose for me?( IF SOMEHOW YOU MAkE ME AGREEE)",
+        correctAnswers: ["*"],
+        type: "text"
+    },
+    {
         question: "Describe one of our best moments that will stay in your heart?",
         correctAnswers: ["*"],
         type: "text"
@@ -95,7 +105,7 @@ const questions = [
         type: "choice"
     },
     {
-        question: "Is cuddling with me the best feeling ever?",
+        question: " cuddle ?",
         correctAnswers: ["Yes", "No"],
         answers: ["Yes", "No"],
         type: "choice"
@@ -107,24 +117,19 @@ const questions = [
         type: "choice"
     },
     {
-        question: "Have I ever made your heart race just by looking at you? How?",
-        correctAnswers: ["*"],
-        type: "text"
-    },
-    {
-        question: "Are we going to Keller today?",
+        question: "Are we going to Keller today👀?",
         correctAnswers: ["Yes", "No"],
         answers: ["Yes", "No"],
         type: "choice"
     },
     {
-        question: "Think about it!!!",
+        question: "Think about it!!!👀😏",
         correctAnswers: ["Yes", "No"],
         answers: ["Yes", "No"],
         type: "choice"
     },
     {
-        question: "You have one more chaceee!!!!",
+        question: "You have one more chaceee!!!!🥺",
         correctAnswers: ["Yes and maybe"],
         answers: ["Yes and maybe", "No"],
         type: "choice"
@@ -193,7 +198,7 @@ function checkAnswer(selectedAnswer) {
             displayQuestion();
         }
     } else {
-        feedbackBox.textContent = "Oops! Try again.";
+        feedbackBox.textContent = "Oopsiee!!!!";
     }
 }
 
