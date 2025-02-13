@@ -73,6 +73,17 @@ const questions = [
         type: "text"
     },
     {
+        question: "One thing you love about me",
+        correctAnswers: ["*"],
+        type: "text"
+    },
+    {
+        question: "One thing that makes me special from others in your eyes",
+        correctAnswers: ["*"],
+        type: "text"
+    },
+
+    {
         question: "What one princess dress would you choose for me?( IF SOMEHOW YOU MAkE ME AGREEE)",
         correctAnswers: ["*"],
         type: "text"
@@ -105,7 +116,7 @@ const questions = [
         type: "choice"
     },
     {
-        question: " cuddle ?",
+        question: " want cuddle ?",
         correctAnswers: ["Yes", "No"],
         answers: ["Yes", "No"],
         type: "choice"
