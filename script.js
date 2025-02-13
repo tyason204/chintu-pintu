@@ -116,7 +116,7 @@ const questions = [
         type: "choice"
     },
     {
-        question: " want cuddle ?",
+        question: "want cuddle?",
         correctAnswers: ["Yes", "No"],
         answers: ["Yes", "No"],
         type: "choice"
