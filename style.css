@@ -241,12 +241,13 @@ h1 {
   }
   100% {
     top: 110%; /* End below the screen */
-    transform: rotate(360deg); /* Rotate the Hello Kitty image while falling */
+    transform: rotate(360deg); /* Rotate the Hello kitty image while falling */
   }
 
   .container {
     width: 70%; /* Make the container take up 90% of the screen width */
     max-width: 200px; /* Set a maximum width for smaller screens */
+    height: auto;
     padding: 15px; /* Reduce padding to save space */
     margin: 20px auto; /* Center the container */
   }
