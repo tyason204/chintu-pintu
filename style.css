@@ -379,3 +379,9 @@ h1 {
   animation-duration: 9s;
   animation-delay: 5s;
 }
+.hello-kitty {
+    pointer-events: auto; /* Allow clicking/tapping */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: top 0.5s ease, left 0.5s ease; /* Smooth respawn animation */
+}
+
