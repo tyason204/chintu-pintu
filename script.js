@@ -232,3 +232,39 @@ function showConfetti() {
 
 // Start the quiz
 displayQuestion();
+
+// Function to generate random positions
+function getRandomPosition() {
+    const left = Math.random() * 90; // Random horizontal position (0% to 90%)
+    const duration = Math.random() * 5 + 5; // Random animation duration (5s to 10s)
+    const delay = Math.random() * 5; // Random animation delay (0s to 5s)
+    return { left, duration, delay };
+}
+
+// Function to respawn a Hello Kitty image
+function respawnHelloKitty(helloKitty) {
+    const { left, duration, delay } = getRandomPosition();
+    helloKitty.style.left = `${left}%`;
+    helloKitty.style.animationDuration = `${duration}s`;
+    helloKitty.style.animationDelay = `${delay}s`;
+    helloKitty.style.top = "-10%"; // Reset to the top
+}
+
+// Add click event listeners to all Hello Kitty images
+document.querySelectorAll('.hello-kitty').forEach(helloKitty => {
+    // Set initial random position
+    respawnHelloKitty(helloKitty);
+
+    // Add click event listener
+    helloKitty.addEventListener('click', () => {
+        // Trigger confetti animation
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 },
+        });
+
+        // Respawn the Hello Kitty image
+        respawnHelloKitty(helloKitty);
+    });
+});
