@@ -257,14 +257,16 @@ document.querySelectorAll('.hello-kitty').forEach(helloKitty => {
 
     // Add click event listener
     helloKitty.addEventListener('click', () => {
-        // Trigger confetti animation
+        // Trigger confetti animation with red and white colors
         confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 },
+            particleCount: 100, // Number of confetti particles
+            spread: 70, // Spread of the confetti
+            origin: { y: 0.6 }, // Origin of the confetti (bottom of the screen)
+            colors: ['#ff0000', '#ffffff'], // Red and white colors
         });
 
         // Respawn the Hello Kitty image
         respawnHelloKitty(helloKitty);
     });
+});
 });
